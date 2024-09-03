@@ -5,6 +5,8 @@ from sqlalchemy import create_engine, Column, Integer, String, Table, MetaData
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import IntegrityError
 
+
+app = FastAPI()
 # Configuración de la base de datos
 DATABASE_URL = "sqlite:///./test.db"
 engine = create_engine(DATABASE_URL)
